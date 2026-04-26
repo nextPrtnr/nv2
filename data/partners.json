@@ -1,0 +1,24 @@
+{
+  "trustedBy": [
+    { "name": "ICT Division Bangladesh", "logo": "🏛️", "url": "https://ictd.gov.bd/", "type": "government" },
+    { "name": "a2i Programme", "logo": "💻", "url": "https://a2i.gov.bd/", "type": "government" },
+    { "name": "BASIS", "logo": "⚙️", "url": "https://basis.org.bd/", "type": "association" },
+    { "name": "BUET", "logo": "🎓", "url": "https://www.buet.ac.bd/", "type": "university" },
+    { "name": "DU", "logo": "🏫", "url": "https://www.du.ac.bd/", "type": "university" },
+    { "name": "BRAC University", "logo": "📚", "url": "https://www.bracu.ac.bd/", "type": "university" },
+    { "name": "NSU", "logo": "🎯", "url": "https://www.northsouth.edu/", "type": "university" },
+    { "name": "SUST", "logo": "🔬", "url": "https://www.sust.edu/", "type": "university" }
+  ],
+  "mediaPartners": [
+    { "name": "The Daily Star", "logo": "📰", "url": "https://www.thedailystar.net/" },
+    { "name": "Prothom Alo", "logo": "📱", "url": "https://www.prothomalo.com/" },
+    { "name": "TechJuice BD", "logo": "⚡", "url": "#" },
+    { "name": "Shiksha Barta", "logo": "📖", "url": "#" }
+  ],
+  "communityPartners": [
+    { "name": "Facebook Community", "logo": "👥", "url": "https://www.facebook.com/groups/nexteca", "members": "12,000+" },
+    { "name": "GitHub Open Source", "logo": "💻", "url": "https://github.com/nextPrtnr/nextECA", "members": "Open Source" },
+    { "name": "BdMO Community", "logo": "🧮", "url": "#", "members": "Math Olympiad" },
+    { "name": "Bangladesh Scouts", "logo": "⚜️", "url": "#", "members": "Youth Network" }
+  ]
+}

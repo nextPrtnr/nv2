@@ -1,0 +1,39 @@
+{
+  "_INSTRUCTIONS": "Copy one block below into data/opportunities.json. Remove this _INSTRUCTIONS field. The 'id' must be unique (use kebab-case). 'deadline' must be YYYY-MM-DD format. 'featured' should be true only for top 3-5 opportunities.",
+
+  "_TEMPLATE": {
+    "id": "unique-slug-here",
+    "title": "Opportunity Full Title",
+    "org": "Organizing Body Name",
+    "logo": "🏆",
+    "category": "Hackathon",
+    "tags": ["Tag1", "Tag2", "Tag3"],
+    "location": "Global",
+    "mode": "online",
+    "deadline": "2025-12-31",
+    "prize": "Prize description",
+    "prizeAmount": "$10,000",
+    "featured": false,
+    "description": "2-4 sentence description of what this opportunity is and why students should apply.",
+    "eligibility": "Who can apply — age, nationality, education level etc.",
+    "link": "https://official-link.com/apply",
+    "tips": "Tip 1. Tip 2. Tip 3.",
+    "country": "USA",
+    "level": "international"
+  },
+
+  "_CATEGORY_OPTIONS": ["Hackathon", "Scholarship", "Competition", "Fellowship", "Research", "Olympiad", "Exchange", "Conference"],
+  "_MODE_OPTIONS":     ["online", "in-person", "hybrid", "international"],
+  "_LEVEL_OPTIONS":    ["national", "international"],
+
+  "_LOGO_SUGGESTIONS": {
+    "Hackathon":   "⌨️ or ⚡ or 💻",
+    "Scholarship": "🎓 or 📚",
+    "Competition": "🏆 or 🥇",
+    "Fellowship":  "🌍 or 🤝",
+    "Research":    "🔬 or 🧪",
+    "Olympiad":    "🧮 or 🎯",
+    "Exchange":    "✈️ or 🌐",
+    "Conference":  "🎤 or 📢"
+  }
+}
