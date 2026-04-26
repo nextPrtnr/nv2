@@ -1,0 +1,32 @@
+# nextECA — .gitignore
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local environment (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Netlify local dev
+.netlify/
+
+# Node (if you ever add a build step later)
+node_modules/
+package-lock.json

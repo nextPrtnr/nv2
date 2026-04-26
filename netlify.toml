@@ -1,0 +1,65 @@
+# ============================================================
+#  nextECA — Netlify Configuration
+#  Handles: SPA routing, security headers, form submissions,
+#           caching, and deploy previews
+# ============================================================
+
+[build]
+  publish = "."          # Root of repo is the publish directory
+  command   = ""                     # No build step needed — pure HTML/CSS/JS
+  functions = "netlify/functions"   # Serverless functions folder
+
+# ── REDIRECTS ────────────────────────────────────────────────
+# SPA fallback: all routes → index.html (hash routing handles the rest)
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
+
+# ── HEADERS ──────────────────────────────────────────────────
+# Security + performance headers for all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection       = "1; mode=block"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+# Long cache for static assets (CSS/JS/fonts/images)
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Short cache for data files (updated frequently)
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, stale-while-revalidate=60"
+
+# ── FORM NOTIFICATIONS ────────────────────────────────────────
+# Netlify will email you on every opportunity submission.
+# Set NETLIFY_FORM_EMAIL in your Netlify dashboard environment variables.
+# (This config itself just names the form — notifications set in UI)
+
+# ── DEPLOY CONTEXTS ───────────────────────────────────────────
+[context.production]
+  environment = { NODE_ENV = "production" }
+
+[context.deploy-preview]
+  environment = { NODE_ENV = "preview" }
+
+[context.branch-deploy]
+  environment = { NODE_ENV = "staging" }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>nextECA — Find Competitions, Scholarships & Hackathons in Bangladesh</title>
+  <meta name="description" content="Bangladesh's #1 opportunity hub. Discover competitions, scholarships, hackathons, fellowships and research grants — curated for ambitious students worldwide." />
+  <meta name="keywords" content="Bangladesh scholarships, hackathons Bangladesh, competitions for students, fellowships BD, nextECA, opportunities Bangladesh" />
+  <meta name="author" content="nextECA" />
+  <link rel="canonical" href="https://nexteca.club/" />
+
+  <!-- ── Open Graph (Facebook / LinkedIn previews) ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://nexteca.club/" />
+  <meta property="og:title"       content="nextECA — Find Your Next Big Opportunity" />
+  <meta property="og:description" content="500+ competitions, scholarships, hackathons & fellowships curated for students in Bangladesh and beyond. Always free." />
+  <meta property="og:image"       content="https://nexteca.club/assets/og-image.png" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="nextECA — Find Your Next Big Opportunity" />
+  <meta name="twitter:description" content="500+ competitions, scholarships & hackathons. Always free." />
+  <meta name="twitter:image"       content="https://nexteca.club/assets/og-image.png" />
+
+  <!-- ── Favicon ── -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon"          href="assets/apple-touch-icon.png" />
+
+  <!-- ── Fonts (preconnect for speed) ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- ── Stylesheet ── -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ── Netlify Forms (hidden form for form detection) ── -->
+  <form name="opportunity-submit" netlify netlify-honeypot="bot-field" hidden>
+    <input name="bot-field" />
+    <input name="title" /><input name="category" /><input name="org" />
+    <input name="deadline" /><input name="mode" /><input name="link" />
+    <input name="prize" /><input name="location" /><input name="description" />
+    <input name="eligibility" /><input name="tags" />
+    <input name="submitter_name" /><input name="submitter_email" />
+  </form>
+
+  <!-- ── Theme color (browser chrome) ── -->
+  <meta name="theme-color" content="#0052CC" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION (rendered by JS)
+  ══════════════════════════════════════ -->
+  <header id="nav" class="nav" role="banner"></header>
+
+  <!-- ══════════════════════════════════════
+       MAIN APP SHELL
+  ══════════════════════════════════════ -->
+  <div class="page-shell" role="main">
+
+    <!-- Loading screen shown before JS kicks in -->
+    <div id="loading-screen" style="
+      display:flex; flex-direction:column; align-items:center;
+      justify-content:center; min-height:80vh; gap:16px;
+      font-family:'Plus Jakarta Sans',system-ui,sans-serif;
+    ">
+      <div style="
+        width:40px; height:40px; border-radius:10px;
+        background:#0052CC; display:flex; align-items:center;
+        justify-content:center; font-size:20px; font-weight:800;
+        color:#fff; font-family:'Syne',system-ui,sans-serif;
+        animation:spin 1s ease infinite;
+      ">N</div>
+      <p style="font-size:14px;color:#8993A4;">Loading nextECA...</p>
+    </div>
+
+    <!-- Page content injected here by app.js -->
+    <div id="app" style="display:none;"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       TOAST NOTIFICATIONS
+  ══════════════════════════════════════ -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- ══════════════════════════════════════
+       INLINE CRITICAL STYLES
+  ══════════════════════════════════════ -->
+  <style>
+    @keyframes spin {
+      0%,100% { transform: scale(1); opacity:1; }
+      50%      { transform: scale(0.85); opacity:0.7; }
+    }
+  </style>
+
+  <!-- ══════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════ -->
+  <script>
+    // Hide loading screen once app is ready
+    window.__appReady = function() {
+      const loading = document.getElementById('loading-screen');
+      const app = document.getElementById('app');
+      if (loading) loading.style.display = 'none';
+      if (app) app.style.display = 'block';
+    };
+  </script>
+  <script src="js/app.js" defer></script>
+
+  <!-- Call appReady after app.js initialises -->
+  <script>
+    // app.js calls init() which is async; we hook into its completion
+    document.addEventListener('DOMContentLoaded', () => {
+      // Small safety timeout — app.js init() is async (fetch calls)
+      // It will call __appReady itself; this is just a fallback
+      setTimeout(window.__appReady, 3000);
+    });
+  </script>
+
+</body>
+</html>
