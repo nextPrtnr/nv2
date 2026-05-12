@@ -1,134 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>nextECA — The Competition Ecosystem for Students</title>
-  <meta name="description" content="Centralized discovery for Olympiads, Hackathons, and specialized contests. Bridge the information gap and build your Talent Graph." />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/style.css" />
-  <meta name="theme-color" content="#0052CC" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nextECA | Find The Next Opportunity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header id="nav" class="nav" role="banner">
-    <div class="nav-inner">
-      <div class="nav-logo">
-        <div class="nav-logo-mark">N</div>
-        <div class="nav-logo-text">next<span>ECA</span></div>
-      </div>
-      <nav class="nav-links">
-        <a href="#" class="nav-link active">Olympiads</a>
-        <a href="#" class="nav-link">Hackathons</a>
-        <a href="#" class="nav-link">Case Competitions</a>
-        <a href="#" class="nav-link">Resources</a>
-      </nav>
-      <div class="nav-right">
-        <button class="btn btn-primary">Join Ecosystem</button>
-      </div>
-    </div>
-  </header>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <img src="logo.png" alt="nextECA Logo" class="nav-logo">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="competitions.html">Competitions</a></li>
+                <li><a href="organizers.html">For Organizers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="competitions.html" class="btn btn-primary nav-cta">Get Started</a>
+        </div>
+    </nav>
 
-  <main class="page-shell">
-    <section class="home-hero">
-      <div class="container">
-        <div class="hero-eyebrow">
-          <span class="hero-eyebrow-dot"></span>
-          Now Live: The Specialized Competition Hub
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Find The <span class="highlight">Next Opportunity</span></h1>
+                <p>Discover olympiads, hackathons & competitions matched to your skills — all in one place.</p>
+                <div class="hero-btns">
+                    <a href="competitions.html" class="btn btn-primary">Explore Competitions</a>
+                    <a href="organizers.html" class="btn btn-outline">Host an Event</a>
+                </div>
+            </div>
         </div>
-        <h1>Unlock Your Potential in <em>Global Competitions</em></h1>
-        <p class="sub">The one platform where students discover, prepare, and compete in the world's toughest Olympiads and Hackathons. No more fragmented info.</p>
-        
-        <div class="hero-search-wrap">
-          <div class="search-bar">
-            <span class="search-bar-icon">🔍</span>
-            <input type="text" placeholder="Search for Olympiads, Hackathons, or Contests..." />
-            <button class="search-bar-btn">Find Contests</button>
-          </div>
-        </div>
+        <div class="hero-bg-animation"></div>
+    </header>
 
-        <div class="hero-pills">
-          <span class="hero-pill">Physics Olympiad</span>
-          <span class="hero-pill">AI Hackathons</span>
-          <span class="hero-pill">Math Contests</span>
-          <span class="hero-pill">Coding Challenges</span>
+    <section class="stats-bar">
+        <div class="container stats-flex">
+            <div class="stat-item">
+                <h3>4.6M+</h3>
+                <p>University Students in BD</p>
+            </div>
+            <div class="stat-item">
+                <h3>700M+</h3>
+                <p>Youth in South Asia</p>
+            </div>
+            <div class="stat-item danger">
+                <h3>0</h3>
+                <p>Unified Platforms</p>
+            </div>
         </div>
-
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="hero-stat-num">2.5K<span>+</span></div>
-            <div class="hero-stat-label">Active Members</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">95<span>%</span></div>
-            <div class="hero-stat-label">Organic Growth</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">Open</div>
-            <div class="hero-stat-label">Source Community</div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="container" style="margin-top: 40px;">
-      <div class="section-head-row">
-        <div>
-          <h2 class="section-title">Specialized Niche Markets</h2>
-          <p class="section-sub">Curated categories for high-stakes talent discovery.</p>
+    <section class="two-col-info container section-padding">
+        <div class="info-card student-side">
+            <h2>FOR STUDENTS</h2>
+            <ul>
+                <li>Centralized competition discovery</li>
+                <li>AI-powered smart matching (Coming Soon)</li>
+                <li>Verified opportunities & reviews</li>
+                <li>Mentorship from champions</li>
+                <li>Team & co-founder matching</li>
+            </ul>
         </div>
-      </div>
-      <div class="cat-grid">
-        <div class="cat-card">
-          <span class="cat-card-icon">🏆</span>
-          <span class="cat-card-name">Olympiads</span>
-          <span class="cat-card-count">Science & Math Focus</span>
+        <div class="info-card organizer-side">
+            <h2>FOR ORGANIZERS</h2>
+            <ul>
+                <li>Registration & participant management</li>
+                <li>Judging & evaluation tools</li>
+                <li>Certificates & communication automation</li>
+                <li>Marketing and outreach support</li>
+                <li>Full competition management service</li>
+            </ul>
         </div>
-        <div class="cat-card">
-          <span class="cat-card-icon">💻</span>
-          <span class="cat-card-name">Hackathons</span>
-          <span class="cat-card-count">Tech & BuildFests</span>
-        </div>
-        <div class="cat-card">
-          <span class="cat-card-icon">📊</span>
-          <span class="cat-card-name">Case Study</span>
-          <span class="cat-card-count">Business Strategy</span>
-        </div>
-        <div class="cat-card">
-          <span class="cat-card-icon">🧠</span>
-          <span class="cat-card-name">Quizzes</span>
-          <span class="cat-card-count">Trivia & Skill Tests</span>
-        </div>
-      </div>
     </section>
 
-    <section class="trusted-strip">
-      <div class="trusted-strip-inner">
-        <p class="trusted-label">Empowering Talent Across Institutions</p>
-        <div class="trusted-logos">
-          <div class="trusted-logo-item">Varendra University</div>
-          <div class="trusted-logo-item">ICT Division</div>
-          <div class="trusted-logo-item">World Bank Support</div>
-          <div class="trusted-logo-item">Daffodil University</div>
+    <section class="how-it-works bg-charcoal section-padding">
+        <div class="container text-center">
+            <h2 class="light-text">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-icon">01</div>
+                    <h3>Profile</h3>
+                    <p>Create your profile & add your skills.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">02</div>
+                    <h3>Discover</h3>
+                    <p>Find competitions matched to you.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">03</div>
+                    <h3>Compete</h3>
+                    <p>Grow, get recognized & win.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-bottom">
-        <p>&copy; 2026 nextECA. Beyond CVs: The Talent Graph.</p>
-        <div class="footer-social">
-          <a href="#" class="footer-social-btn">FB</a>
-          <a href="#" class="footer-social-btn">LI</a>
+    <section class="logos-section section-padding">
+        <div class="container">
+            <h2 class="text-center">Trusted By & Collaborated With</h2>
+            <div class="logo-grid">
+                <span>Varendra University</span>
+                <span>UIHP</span>
+                <span>BRAC University</span>
+                <span>Daffodil University</span>
+                <span>ICT Division</span>
+                <span>CloudCamp</span>
+            </div>
+            <div class="traction-numbers">
+                <p><strong>2.5K+</strong> Community Members | <strong>27K+</strong> Monthly Reach | <strong>95%</strong> Organic Growth</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </section>
+
+    <section class="impact-section bg-red section-padding">
+        <div class="container text-center light-text">
+            <h2>A World of Zero Unemployment</h2>
+            <p>nextECA contributes to the global "Three Zeros" mission. By turning competition participation into a <strong>verified Talent Graph</strong>, we bridge the gap between hidden potential and career opportunities.</p>
+        </div>
+    </section>
+
+    <footer class="footer section-padding">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="logo.png" alt="nextECA" class="footer-logo">
+                <p>"We believe everyone is perfect with their own skills. What they need is a perfect match."</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="competitions.html">Competitions</a>
+                <a href="organizers.html">For Organizers</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>hello@nexteca.club</p>
+                <div class="socials">
+                    <span>FB</span> <span>IN</span> <span>LI</span> <span>YT</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
