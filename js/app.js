@@ -156,13 +156,11 @@ async function loadData() {
 // ─── NAVIGATION RENDER ────────────────────────────────────────────────────────
 const NAV_CATEGORIES = [
   { cat:'Hackathon',   icon:'⌨️', bg:'#E9F2FF', label:'Hackathons',      sub:'Code & build challenges'    },
-  { cat:'Scholarship', icon:'🎓', bg:'#E3FCEF', label:'Scholarships',    sub:'Fully funded study abroad'   },
   { cat:'Competition', icon:'🏆', bg:'#FFEBE6', label:'Competitions',    sub:'Win prizes worldwide'        },
-  { cat:'Fellowship',  icon:'🌍', bg:'#FFF0B3', label:'Fellowships',     sub:'Leadership programs'         },
-  { cat:'Research',    icon:'🔬', bg:'#EAE6FF', label:'Research Grants', sub:'Academic funding'            },
+  { cat:'Contests',  icon:'🌍', bg:'#FFF0B3', label:'Fellowships',     sub:'Leadership programs'         },
+  { cat:'Research Olympiad',    icon:'🔬', bg:'#EAE6FF', label:'Research Grants', sub:'Academic funding'            },
   { cat:'Olympiad',    icon:'🧮', bg:'#FFECF8', label:'Olympiads',       sub:'Science & math olympiads'   },
-  { cat:'Exchange',    icon:'✈️', bg:'#E6FCFF', label:'Exchange Programs',sub:'Study abroad programs'      },
-  { cat:'Conference',  icon:'🎤', bg:'#F3F0FF', label:'Conferences',     sub:'Represent your ideas'        },
+  
 ];
 
 function renderNav() {
@@ -549,7 +547,7 @@ function renderHome() {
           Bangladesh's #1 Opportunity Hub — Updated Daily
         </div>
         <h1>Find Your <em>Next Big</em><br/>Opportunity</h1>
-        <p class="sub">Competitions, scholarships, hackathons & fellowships — curated for ambitious students across Bangladesh and the world.</p>
+        <p class="sub">Competitions, Olympiads & hackathons — curated for ambitious students across Bangladesh and the world.</p>
 
         <div class="hero-search-wrap">
           <div class="search-bar" id="hero-search-bar">
